@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    --bg-col:rgb(39, 39, 39);
+    --col:rgb(214, 214, 214);
+    --tbl-col-th:rgb(70, 70, 70);
+    --tbl-col-td:rgb(85, 85, 85);
+    --tbl-col-border:rgb(114, 114, 114);
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--bg-col);
+    color: var(--col);
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto auto;
+}
+
+.main-app {
+    padding: 0 15%;
+    /* padding-top: 8em; */
+    /* margin-top: 5rem; */
+    min-height: 100vh;
+}
+
+.padding-v {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.tbl {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* overflow-x: auto; */
+    /* height: 50%; */
+    /* padding: 0 2rem; */
+}
+
+.tbl table {
+    border: solid 2px var(--tbl-col-border);
+}
+
+.tbl caption {
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+}
+
+#verticalCol {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.4rem;
+    padding-left: 4.5%;
+}
+
+thead {
+    background-color: var(--tbl-col-th)
+}
+td {
+    background-color: var(--tbl-col-td); 
+}
+
+th, td {
+    padding: 1em 0.5em;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#verticalCol:hover {
+    cursor: pointer;
+}
